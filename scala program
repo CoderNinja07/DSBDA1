@@ -1,0 +1,129 @@
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ java -version
+openjdk version "1.8.0_292"
+OpenJDK Runtime Environment (build 1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10)
+OpenJDK 64-Bit Server VM (build 25.292-b10, mixed mode)
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ scala -version
+Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ scala.sh
+scala.sh: command not found
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ scala
+Welcome to Scala version 2.11.6 (OpenJDK 64-Bit Server VM, Java 1.8.0_292).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> var Var4 = 2
+Var4: Int = 2
+
+scala> var Var5 = 3
+Var5: Int = 3
+
+scala> Var4+Var5
+res0: Int = 5
+
+scala> Var4 == Var5
+res1: Boolean = false
+
+scala> Var5>Var4
+res2: Boolean = true
+
+scala> for(a<0 to 10){
+<console>:1: error: '<-' expected but ')' found.
+       for(a<0 to 10){
+                    ^
+
+scala> for(a<0 to 10){println("Value of a: "+a);}
+<console>:1: error: '<-' expected but ')' found.
+       for(a<0 to 10){println("Value of a: "+a);}
+                    ^
+
+scala> for(a<-0 to 10){println("Value of a: "+a);}
+Value of a: 0
+Value of a: 1
+Value of a: 2
+Value of a: 3
+Value of a: 4
+Value of a: 5
+Value of a: 6
+Value of a: 7
+Value of a: 8
+Value of a: 9
+Value of a: 10
+
+scala> var Var3=1
+Var3: Int = 1
+
+scala> if(Var3==1){println("True")}else{println("False")}
+True
+
+scala> def mul2(m:Int): Int=m*10
+mul2: (m: Int)Int
+
+scala> mul2(3)
+res5: Int = 30
+
+scala> (base) hdoop@cg17-HP-285-Pro-G1-MT:~$ ls
+3136_DSBDAL                        number1.class
+3149_DSBDAL                        number1.java
+aman.p                             number.java
+anaconda3                          Number.java
+Anaconda3-2021.11-Linux-x86_64.sh  num.class
+buffer.java                        num.java
+coin.cpp                           opt
+demo.class                         overloaddemo.class
+demo.java                          overloaddemo.java
+Desktop                            Pictures
+dfsdata                            Public
+Documents                          PycharmProjects
+Downloads                          seaborn-data
+eclipse-workspace                  snap
+examples.desktop                   subTestJNI.java
+finalize.class                     Templates
+finalize.java                      test1.class
+hab=nd                             test1.java
+hadoop-3.2.3                       test2.class
+hadoop-3.2.3.tar.gz                test2.java
+hand                               test3.java
+HelloWorld.scala                   test.class
+index.html                         test.java
+java_error_in_pycharm_27535.log    TestJNI.c
+jdk1.8.0_361                       TestJNI.class
+jdk-8u361-linux-i586.tar.gz        TestJNI.h
+libcal.so                          TestJNI.java
+line.c1                            Untitled.ipynb
+Music                              Videos
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ scalac HelloWorld.scala
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ ls
+3136_DSBDAL                        Music
+3149_DSBDAL                        number1.class
+aman.p                             number1.java
+anaconda3                          number.java
+Anaconda3-2021.11-Linux-x86_64.sh  Number.java
+buffer.java                        num.class
+coin.cpp                           num.java
+demo.class                         opt
+demo.java                          overloaddemo.class
+Desktop                            overloaddemo.java
+dfsdata                            Pictures
+Documents                          Public
+Downloads                          PycharmProjects
+eclipse-workspace                  seaborn-data
+examples.desktop                   snap
+finalize.class                     subTestJNI.java
+finalize.java                      Templates
+hab=nd                             test1.class
+hadoop-3.2.3                       test1.java
+hadoop-3.2.3.tar.gz                test2.class
+hand                               test2.java
+HelloWorld.class                   test3.java
+HelloWorld$.class                  test.class
+HelloWorld.scala                   test.java
+index.html                         TestJNI.c
+java_error_in_pycharm_27535.log    TestJNI.class
+jdk1.8.0_361                       TestJNI.h
+jdk-8u361-linux-i586.tar.gz        TestJNI.java
+libcal.so                          Untitled.ipynb
+line.c1                            Videos
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ scala HelloWorld
+Hello, world!!
+(base) hdoop@cg17-HP-285-Pro-G1-MT:~$ 
+
